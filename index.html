@@ -1,30 +1,41 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Phpdotjson by sagar-shirsath</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Phpdotjson</h1>
-      <h2 class="project-tagline">A Light weight framework for Services developed in PHP</h2>
-      <a href="https://github.com/sagar-shirsath/PhpDotJson" class="btn">View on GitHub</a>
-      <a href="https://github.com/sagar-shirsath/PhpDotJson/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/sagar-shirsath/PhpDotJson/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <section class="main-content">
-      <h1>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Phpdotjson by sagar-shirsath</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Phpdotjson</h1>
+        <h2>A Light weight framework for Services or API developed in PHP</h2>
+        <a href="https://github.com/sagar-shirsath/PhpDotJson" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
 <a id="phpdotjson" class="anchor" href="#phpdotjson" aria-hidden="true"><span class="octicon octicon-link"></span></a>PhpDotJson</h1>
 
-<p>A Light weight framework for Services developed in PHP</p>
+<h1>
+<a id="a-light-weight-framework-for-services-developed-in-php" class="anchor" href="#a-light-weight-framework-for-services-developed-in-php" aria-hidden="true"><span class="octicon octicon-link"></span></a>A Light weight framework for Services developed in PHP</h1>
 
-<p>Anyone can use it and modify it, it is open source come and join the community to enhance it.</p>
+<h3>
+<a id="anyone-can-use-it-and-modify-it-it-is-open-source-come-and-join-the-community-to-enhance-it" class="anchor" href="#anyone-can-use-it-and-modify-it-it-is-open-source-come-and-join-the-community-to-enhance-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>Anyone can use it and modify it, it is open source come and join the community to enhance it.</h3>
 
 <p>What it does : Developing cross platform API (services) for backend support using php</p>
 
@@ -32,27 +43,27 @@
 
 <p>Getting Started:</p>
 
-<ol>
-<li><p>Configure the database of live and local in Config.php</p></li>
-<li><p>Create your service entry in the actions.xml file
-example : suppose you want to write service for adding users details then in actions.xml 
+<p>****1. Configure the database of live and local in Config.php</p>
 
-      Users
-      AddUserDetails.php
-      AddUserDetails
-  </p></li>
-</ol>
+<p>****2. Create your service entry in the actions.xml file
+example : suppose you want to write service for adding users details then in actions.xml 
+  
+        Users
+        AddUserDetails.php
+        AddUserDetails
+    </p>
 
 <p>Here "add-user-details" is the service name, AddUserDetails.php is the respective file name which is in Users directory
 and AddUserDetails is the name of the class where we wil write the business logic.</p>
 
-<ol>
-<li><p>extend the AppController class and write your code inside the execute method</p></li>
-<li><p>At last return the response in the array format. which will be converted to the json format by the framework, and
-this is the actual response of the service.</p></li>
-<li><p>Import users.sql in your database.</p></li>
-<li><p>The command format is as follows :</p></li>
-</ol>
+<p>****3. extend the AppController class and write your code inside the execute method</p>
+
+<p>****4. At last return the response in the array format. which will be converted to the json format by the framework, and
+this is the actual response of the service.</p>
+
+<p>****5. Import users.sql in your database.</p>
+
+<p>****6. The command format is as follows :</p>
 
 <p>register:
 localhost/Controller.php?command={"command":"register-user","mobile_number":"9911882211","name":"Tukaraam","occupation":2,"gender":1}</p>
@@ -63,14 +74,24 @@ http://localhost/Controller.php?command={"command":"add-user-details","mobile_nu
 
 <p>using access token
 http://localhost/Controller.php?command={"command":"add-user-details","access_token":"4021a93305cae68003d5f723ff82dd14-96dd1c32f539b4cff6a25c8b69ca36d7","device_id":"3884uuwy","occupation":4}</p>
+        </section>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/sagar-shirsath/PhpDotJson">Phpdotjson</a> is maintained by <a href="https://github.com/sagar-shirsath">sagar-shirsath</a>.</span>
+        <aside id="sidebar">
+          <a href="https://github.com/sagar-shirsath/PhpDotJson/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/sagar-shirsath/PhpDotJson/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+          <p class="repo-owner"><a href="https://github.com/sagar-shirsath/PhpDotJson"></a> is maintained by <a href="https://github.com/sagar-shirsath">sagar-shirsath</a>.</p>
 
-    </section>
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
 
             <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -85,4 +106,3 @@ http://localhost/Controller.php?command={"command":"add-user-details","access_to
 
   </body>
 </html>
-

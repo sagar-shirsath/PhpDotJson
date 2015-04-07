@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<actions>
+    <register-user>
+        <dir>Users</dir>
+        <file>Register.php</file>
+        <class>Register</class>
+    </register-user>
+
+    <add-user-details>
+        <dir>Users</dir>
+        <file>AddUserDetails.php</file>
+        <class>AddUserDetails</class>
+    </add-user-details>
+
+</actions>

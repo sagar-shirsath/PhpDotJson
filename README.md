@@ -28,6 +28,16 @@ and AddUserDetails is the name of the class where we wil write the business logi
 this is the actual response of the service.
 
 
+5. The command format is as follows :
 
 
+register:
+localhost/Controller.php?command={"command":"register-user","mobile_number":"9911882211","name":"Tukaraam","occupation":2,"gender":1}
 
+
+Add user details(Update user fields):
+using mobile number
+http://localhost/Controller.php?command={"command":"add-user-details","mobile_number":"9911882211","device_id":"3884uuwy","occupation":4}
+
+using access token
+http://localhost/PhpDotJson/Controller.php?command={"command":"add-user-details","access_token":"4021a93305cae68003d5f723ff82dd14-96dd1c32f539b4cff6a25c8b69ca36d7","device_id":"3884uuwy","occupation":4}
